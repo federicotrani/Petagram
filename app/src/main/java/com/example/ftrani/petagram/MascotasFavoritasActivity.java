@@ -27,7 +27,9 @@ public class MascotasFavoritasActivity extends AppCompatActivity {
         Toolbar miActionBar = (Toolbar) findViewById(R.id.miActionBar);
         ImageButton btnLikes = (ImageButton) findViewById(R.id.btnLikes);
         TextView tituloActionBar = (TextView) findViewById(R.id.txtTitulo);
-        tituloActionBar.setText("Favoritos");
+        tituloActionBar.setText("5 Favoritos");
+
+        btnLikes.setEnabled(false);
 
         setSupportActionBar(miActionBar);
 
@@ -65,8 +67,8 @@ public class MascotasFavoritasActivity extends AppCompatActivity {
     }
 
     public void irMascotasFavoritas(View v){
-        Intent intent = new Intent(this, MascotasFavoritasActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, MascotasFavoritasActivity.class);
+        //startActivity(intent);
     }
 
 }
